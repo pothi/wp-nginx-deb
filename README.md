@@ -4,11 +4,7 @@ WordPress specific Nginx configurations, tweaks, compatibility routines, etc.
 
 ## Compatibility
 
-Tested with Nginx version 1.2.x in Debian 7.x
-
-For CentOS 7, please look at the [CentOS Nginx WP repo](https://github.com/pothi/WordPress-Nginx-CentOS "WordPress-Nginx configuration for CentOS 7").
-
-For Ubuntu 14.04, please look at the [Ubuntu Nginx WP repo](https://github.com/pothi/WordPress-Nginx "WordPress-Nginx conf for Ubuntu 14.04).
+Tested in Debian 8+ and Ubuntu 16.04+
 
 ## How to Install
 
@@ -25,7 +21,8 @@ As __sudo or root__, please use the following guidelines...
 service nginx stop
 
 git clone https://github.com/pothi/wp-nginx-deb.git ~/git/wp-nginx-deb
-cp -a ~/git/wp-nginx-deb/* /etc/nginx/
+cd ~/git/wp-nginx-deb
+cp -a conf.d/ globals/ sites-available /etc/nginx
 
 # Other steps that depends on your particular requirement:
 # YOUR_DOMAIN_NAME=tinywp.com
