@@ -1,3 +1,7 @@
+# Note
+
+Migrated and merged with [https://github.com/pothi/wordpress-nginx/](https://github.com/pothi/wordpress-nginx/).
+
 # WordPress-Nginx
 
 WordPress specific Nginx configurations, tweaks, compatibility routines, etc.
